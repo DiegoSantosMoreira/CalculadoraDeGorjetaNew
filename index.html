@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Calculadora de Gorjeta</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <h1 class="logo">
+                    Calculadora de Gorjeta
+                </h1>
+                <ul class="info">
+                    <li> <a href="sobre.html" class="anchor">Sobre</a></li>
+                    <li> <a href="contato.html" class="anchor">Contato</a></li>
+                </ul>
+            </nav>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+        </header>
+        <section class="calculatorbox">
+            <h1 class="titulo">Calculadora de Gorjeta</h1>
+            <div class="inputs"> 
+                <form action="reset">
+                    <table border="0">
+                        <tbody>
+                        <tr>
+                                <td class="tableData">Total Consumo</td>
+                                <td class="tableData"> 
+                                    <b>$</b>
+                                    <input type="number" name="consumo" id="consumo" class="inputData"> 
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="tableData">Porcentagem de Gorjeta</td>
+                                <td class="tableData">
+                                    <select name="porcentagem" id="porcentagem" class="inputData" onchange="calcularGorjeta()">
+                                        <option value=0.1>10</option>
+                                        <option value=0.15>15</option>
+                                        <option value=0.2>20</option>
+                                    </select>
+                                    <b>%</b>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="tableData">Número de Pessoas</td>
+                                <td class="tableData">
+                                    <input type="number" name="numeropessoa" id="numeropessoa" value="1" class="inputData" onchange="calcularGorjeta()">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="tableData" align="right">
+                                    <input type="button" value="Calcular" class="buttonGreen" onclick="calcularGorjeta()">
+                                </td>
+                                <td class="tableData">
+                                    <input type="button" value="Redefinir" class="buttonRed" onclick="apagarTudo()">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="tableData">Total da Gorjeta</td>
+                                <td class="tableData">
+                                    <b>$</b>
+                                    <input type="text" name="totalGorjeta" id="totalGorjeta" class="inputData" disabled="disable" value="0">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="tableData">Total a pagar</td>
+                                <td class="tableData">
+                                    <b>$</b>
+                                    <input type="text" name="totalPagar" id="totalPagar" class="inputData" disabled="disable" value="0">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="tableData">Total por pessoa</td>
+                                <td class="tableData">
+                                    <b>$</b>
+                                    <input type="text" name="totalPessoa" id="totalPessoa" class="inputData" disabled="disable" value="0">
+                                </td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
