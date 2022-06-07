@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;    
+}
+body{
+    margin: auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+ }
+.logo{
+    font-weight: bold;
+    margin: 16px 20px;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.header{
+    background: no-repeat center/cover url('./images/capa.jpg');
+    height: calc(100vh - 500px);
+ }
+ .nav{
+     display: flex;
+     justify-content: space-between;
+ }
+.info{
+    display: flex;
+    list-style: none;
+}
+.info li{
+    color: black;
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+.anchor{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+.text{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 150px auto;
+    max-width: 500px;
+}
+.calculatorbox{
+    margin: 10px auto;
+    border: 2px solid;
+    max-width: 750px;
+    background: #DCDCDC;
+}
+.titulo{
+    text-align: center;
+    letter-spacing: 3px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+#numeropessoa::-webkit-inner-spin-button,#consumo::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.tableData{
+    width: 350px;
+    height: 80px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.inputData{
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.buttonGreen{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background: #008000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+ }
+ .buttonRed{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background: #ff0000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+ }
+ .buttonGreen:hover, .buttonRed:hover{
+     background-color: #DCDCDC;
+     color: black;
+ }
