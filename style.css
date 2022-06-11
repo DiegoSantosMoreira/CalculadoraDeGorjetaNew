@@ -103,9 +103,81 @@ body{
 
  /* RESPONSIVIDADE */
  @media (max-width:767px)  {
+    body{
+        margin-botton: 35px;
+    }
+    .header .nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 35px;
+        background: #1d61dd;
+        display: flex;
+        justify-content: space-around;
+    }
+    .info li{
+        color:white;
+        margin: 0 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .calculatorbox{
         max-width: 390px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
     }
+    .titulo{
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+    .tableData{
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        padding: 10px;
+        margin-right: 100px;
+        align-items:right;
+    }
+    .inputData{
+        width: 100px;
+        height: 35px;
+        margin: 0 10px;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid;
+    }
+    .buttonGreen{
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 1rem;
+        background: #008000;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+     }
+     .buttonRed{
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 1rem;
+        background: #ff0000;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+     }
+     .buttonGreen:hover, .buttonRed:hover{
+         background-color: #DCDCDC;
+         color: black;
+     }
 }
 @media (max-width:480px)  {
     body{
@@ -136,7 +208,7 @@ body{
         max-width: 390px;
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        margin: 10px auto;
     }
     .titulo{
         text-align: center;
