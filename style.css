@@ -109,7 +109,7 @@ body{
 }
 @media (max-width:480px)  {
     body{
-        height: calc(100vh - 35px);
+        margin-botton: 35px;
     }
     .header .nav ul{
         position: fixed;
