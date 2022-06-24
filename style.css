@@ -17,7 +17,7 @@ body{
     letter-spacing: 3px;
 }
 .header{
-    background: no-repeat center/cover url('./images/capa.jpg');
+    background: no-repeat center/cover url('./images/capa.avif');
     height: calc(100vh - 500px);
  }
  .nav{
