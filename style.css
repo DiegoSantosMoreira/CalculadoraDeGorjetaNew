@@ -82,7 +82,7 @@ body{
     border-radius: 10px;
     font-size: 1.5rem;
     background: #008000;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
  }
@@ -91,8 +91,8 @@ body{
     height: 50px;
     border-radius: 10px;
     font-size: 1.5rem;
-    background: #ff0000;
-    color: white;
+    background: #8b0000;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
  }
